@@ -1,0 +1,2 @@
+openscad openscad/wheel.scad -o stl/wheel.stl
+openscad openscad/bottom.scad -o stl/bottom.stl
