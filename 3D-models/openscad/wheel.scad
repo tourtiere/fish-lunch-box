@@ -9,7 +9,7 @@ module wheel(){
             x = (wheel_r - 3) * cos(angle);
             y = (wheel_r - 3) * sin(angle);
             translate([x, y, 0]){
-                cylinder(h = 5, r = 1, center = true);
+                cylinder(h = 5, r = 1.7, center = true);
             }
         }
         cube([5, 3, 5], center = true);

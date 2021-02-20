@@ -4,15 +4,17 @@ module bottom(){
 
     difference(){
         //Wheel
-        hole_r = 4.5;
+        hole_r = 4.7;
         union(){
             cylinder(h=wheel_h, r=wheel_r, center=false);
             cylinder(h=5, r=hole_r+.5, center=false);
         }
         //Center hole
-        cylinder(h=12, r=4.5, center=true);
-        translate([0,  1-wheel_r, 0]){
-            cylinder(h=10, r=5, center=true);
+        cylinder(h=12, r=hole_r, center=true);
+
+        //falling food hole
+        translate([0, wheel_r, 0]){
+            cube([6, 11, 10], center=true);
         }
     }
 
