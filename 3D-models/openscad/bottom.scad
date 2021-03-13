@@ -13,7 +13,7 @@ module bottom(){
         cylinder(h=12, r=hole_r, center=true);
 
         //falling food hole
-        translate([0, wheel_r, 0]){
+        translate([0,- wheel_r, 0]){
             cube([6, 11, 10], center=true);
         }
     }
@@ -21,7 +21,7 @@ module bottom(){
     //Anchors 
     for (i = [-1, 1]){
         translate([anchor_x*i, anchor_y, 0]){
-            cylinder(h=8, r=2, center=false);
+            cylinder(h=6.5, r=2.1, center=false);
             cylinder(h=5, r=3, center = false);
         }
     }
